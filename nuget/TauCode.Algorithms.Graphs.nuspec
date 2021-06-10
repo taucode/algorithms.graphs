@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>TauCode.Algorithms.Graphs</id>
+    <version>0.0.1</version>
+    <authors>TauCode</authors>
+    <owners>TauCode</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="file">LICENSE.txt</license>
+    <projectUrl>https://github.com/taucode/taucode.algorithms.graphs</projectUrl>
+    <repository type="git" url="https://github.com/taucode/taucode.algorithms.graphs"/>
+    <description>TauCode algorithms related to graphs.</description>
+    <releaseNotes>
+      Initial version.
+    </releaseNotes>
+    <tags>taucode algorithms graphs</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard2.1">
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\LICENSE.txt" target="" />
+    <file src="..\src\TauCode.Algorithms.Graphs\bin\Release\netstandard2.1\TauCode.Algorithms.Graphs.dll" target="lib\netstandard2.1" />
+    <file src="..\src\TauCode.Algorithms.Graphs\bin\Release\netstandard2.1\TauCode.Algorithms.Graphs.pdb" target="lib\netstandard2.1" />
+  </files>
+</package>
