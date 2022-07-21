@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>TauCode.Algorithms.Graphs</id>
-    <version>1.3.7</version>
+    <version>1.3.8</version>
     <authors>TauCode</authors>
     <owners>TauCode</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -22,7 +22,7 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="..\LICENSE.txt" target="" />
+    <file src="..\LICENSE*" target="" />
     <file src="..\src\TauCode.Algorithms.Graphs\bin\Release\netstandard2.1\TauCode.Algorithms.Graphs.dll" target="lib\netstandard2.1" />
     <file src="..\src\TauCode.Algorithms.Graphs\bin\Release\netstandard2.1\TauCode.Algorithms.Graphs.pdb" target="lib\netstandard2.1" />
   </files>
