@@ -1,5 +1,4 @@
 ﻿using NUnit.Framework;
-using System.Linq;
 using TauCode.Data.Graphs;
 
 namespace TauCode.Algorithms.Graphs.Tests

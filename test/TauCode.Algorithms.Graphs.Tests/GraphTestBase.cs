@@ -17,6 +17,6 @@ public abstract class GraphTestBase
     [TearDown]
     public void TearDownBase()
     {
-        this.Graph = null;
+        this.Graph = null!;
     }
 }
