@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>TauCode.Algorithms.Graphs</id>
-    <version>1.3.8</version>
+    <version>1.5.0</version>
     <authors>TauCode</authors>
     <owners>TauCode</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -11,19 +11,18 @@
     <repository type="git" url="https://github.com/taucode/taucode.algorithms.graphs"/>
     <description>TauCode algorithms related to graphs.</description>
     <releaseNotes>
-      Initial version.
+      Release 1.5.0.
     </releaseNotes>
     <tags>taucode algorithms graphs</tags>
     <dependencies>
-      <group targetFramework=".NETStandard2.1">
-        <dependency id="TauCode.Algorithms.Abstractions" version="1.3.7" />
-        <dependency id="TauCode.Data.Graphs" version="1.3.7" />
+      <group targetFramework=".NETCoreApp6.0">
+        <dependency id="TauCode.Algorithms.Abstractions" version="1.5.0" />
+        <dependency id="TauCode.Data.Graphs" version="1.5.0" />
       </group>
     </dependencies>
   </metadata>
   <files>
     <file src="..\LICENSE*" target="" />
-    <file src="..\src\TauCode.Algorithms.Graphs\bin\Release\netstandard2.1\TauCode.Algorithms.Graphs.dll" target="lib\netstandard2.1" />
-    <file src="..\src\TauCode.Algorithms.Graphs\bin\Release\netstandard2.1\TauCode.Algorithms.Graphs.pdb" target="lib\netstandard2.1" />
+    <file src="..\src\TauCode.Algorithms.Graphs\bin\Release\net6.0\TauCode.Algorithms.Graphs.dll" target="lib\net6.0" />
   </files>
 </package>
