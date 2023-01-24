@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>TauCode.Algorithms.Graphs</id>
-    <version>1.5.0</version>
+    <version>1.7.0</version>
     <authors>TauCode</authors>
     <owners>TauCode</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -11,13 +11,13 @@
     <repository type="git" url="https://github.com/taucode/taucode.algorithms.graphs"/>
     <description>TauCode algorithms related to graphs.</description>
     <releaseNotes>
-      Release 1.5.0.
+      Release 1.7.0.
     </releaseNotes>
     <tags>taucode algorithms graphs</tags>
     <dependencies>
       <group targetFramework=".NETCoreApp6.0">
-        <dependency id="TauCode.Algorithms.Abstractions" version="1.5.0" />
-        <dependency id="TauCode.Data.Graphs" version="1.5.0" />
+        <dependency id="TauCode.Algorithms.Abstractions" version="1.7.0" />
+        <dependency id="TauCode.Data.Graphs" version="1.7.0" />
       </group>
     </dependencies>
   </metadata>

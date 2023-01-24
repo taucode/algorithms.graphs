@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="TauCode.Algorithms.Abstractions" Version="1.5.0" />
-    <PackageReference Include="TauCode.Data.Graphs" Version="1.5.0" />
+    <PackageReference Include="TauCode.Algorithms.Abstractions" Version="1.7.0" />
+    <PackageReference Include="TauCode.Data.Graphs" Version="1.7.0" />
   </ItemGroup>
 
 </Project>
