@@ -2,27 +2,29 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>TauCode.Algorithms.Graphs</id>
-    <version>1.7.0</version>
+    <version>2.0.1</version>
     <authors>TauCode</authors>
     <owners>TauCode</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="file">LICENSE</license>
-    <projectUrl>https://github.com/taucode/taucode.algorithms.graphs</projectUrl>
-    <repository type="git" url="https://github.com/taucode/taucode.algorithms.graphs"/>
+    <projectUrl>https://github.com/taucode/algorithms.graphs</projectUrl>
+    <repository type="git" url="https://github.com/taucode/algorithms.graphs"/>
+    <readme>README.md</readme>
     <description>TauCode algorithms related to graphs.</description>
     <releaseNotes>
-      Release 1.7.0.
+      Release 2.0.1.
     </releaseNotes>
     <tags>taucode algorithms graphs</tags>
     <dependencies>
-      <group targetFramework=".NETCoreApp6.0">
-        <dependency id="TauCode.Algorithms.Abstractions" version="1.7.0" />
-        <dependency id="TauCode.Data.Graphs" version="1.7.0" />
+      <group targetFramework="net8.0">
+        <dependency id="TauCode.Algorithms.Abstractions" version="2.0.1" />
+        <dependency id="TauCode.Data.Graphs" version="2.0.1" />
       </group>
     </dependencies>
   </metadata>
   <files>
+    <file src="..\README.md" target="" />
     <file src="..\LICENSE*" target="" />
-    <file src="..\src\TauCode.Algorithms.Graphs\bin\Release\net6.0\TauCode.Algorithms.Graphs.dll" target="lib\net6.0" />
+    <file src="..\src\TauCode.Algorithms.Graphs\bin\Release\net8.0\TauCode.Algorithms.Graphs.dll" target="lib\net8.0" />
   </files>
 </package>

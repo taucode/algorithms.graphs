@@ -1,9 +1,9 @@
 dotnet restore
 
-dotnet build --configuration Debug
-dotnet build --configuration Release
+dotnet build TauCode.Algorithms.Graphs.sln -c Debug
+dotnet build TauCode.Algorithms.Graphs.sln -c Release
 
-dotnet test -c Debug .\test\TauCode.Algorithms.Graphs.Tests\TauCode.Algorithms.Graphs.Tests.csproj
-dotnet test -c Release .\test\TauCode.Algorithms.Graphs.Tests\TauCode.Algorithms.Graphs.Tests.csproj
+dotnet test TauCode.Algorithms.Graphs.sln -c Debug
+dotnet test TauCode.Algorithms.Graphs.sln -c Release
 
 nuget pack nuget\TauCode.Algorithms.Graphs.nuspec
