@@ -66,43 +66,42 @@ namespace TauCode.Algorithms.Graphs.Tests
             Assert.That(result, Has.Count.EqualTo(4));
 
             // 0
-            CollectionAssert.AreEquivalent(
-                new string[] { "a", "b", "c", "f" },
+            Assert.That(
                 result[0]
                     .Select(x => x.Name)
                     .OrderBy(x => x)
-                    .ToArray()
-                );
+                    .ToArray(),
+                Is.EquivalentTo(new string[] { "a", "b", "c", "f" }));
+
             Assert.That(result[0].GetArcs(), Is.Empty);
 
             // 1
-            CollectionAssert.AreEquivalent(
-                new string[] { "d", "e", "i", "j", "k" },
+            Assert.That(
                 result[1]
                     .Select(x => x.Name)
                     .OrderBy(x => x)
-                    .ToArray()
-                );
+                    .ToArray(),
+                Is.EquivalentTo(new string[] { "d", "e", "i", "j", "k" }));
+
             Assert.That(result[1].GetArcs(), Is.Empty);
 
             // 2
-            CollectionAssert.AreEquivalent(
-                new string[] { "h", "o", "q" },
+            Assert.That(
                 result[2]
                     .Select(x => x.Name)
                     .OrderBy(x => x)
-                    .ToArray()
-                );
+                    .ToArray(),
+                Is.EquivalentTo(new string[] { "h", "o", "q" }));
+
             Assert.That(result[2].GetArcs(), Is.Empty);
 
             // 3
-            CollectionAssert.AreEquivalent(
-                new string[] { "m", "n", "g", "l", "p" },
+            Assert.That(
                 result[3]
                     .Select(x => x.Name)
                     .OrderBy(x => x)
-                    .ToArray()
-                );
+                    .ToArray(),
+                Is.EquivalentTo(new string[] { "m", "n", "g", "l", "p" }));
 
             Assert.That(result[3].GetArcs().ToList(), Has.Count.EqualTo(5));
 
@@ -196,13 +195,13 @@ namespace TauCode.Algorithms.Graphs.Tests
             Assert.That(result, Has.Count.EqualTo(1));
 
             // 0
-            CollectionAssert.AreEquivalent(
-                new string[] { "a", "b", "c", "d", "e" },
+            Assert.That(
                 result[0]
                     .Select(x => x.Name)
                     .OrderBy(x => x)
-                    .ToArray()
-                );
+                    .ToArray(),
+                Is.EquivalentTo(new string[] { "a", "b", "c", "d", "e" }));
+
             Assert.That(result[0].GetArcs(), Is.Empty);
         }
 
@@ -237,25 +236,24 @@ namespace TauCode.Algorithms.Graphs.Tests
             Assert.That(result, Has.Count.EqualTo(2));
 
             // 0
-            CollectionAssert.AreEquivalent(
-                new string[] { "a", "b", "c", "d", "e" }.OrderBy(x => x),
+            Assert.That(
                 result[0]
                     .Select(x => x.Name)
                     .OrderBy(x => x)
-                    .ToArray()
-                );
+                    .ToArray(),
+                Is.EquivalentTo(new string[] { "a", "b", "c", "d", "e" }.OrderBy(x => x)));
+
             Assert.That(result[0].GetArcs(), Is.Empty);
 
             // 0
-            CollectionAssert.AreEquivalent(
-                new string[] { "w", "y", "z" }.OrderBy(x => x),
+            Assert.That(
                 result[1]
                     .Select(x => x.Name)
                     .OrderBy(x => x)
-                    .ToArray()
-                );
-            Assert.That(result[1].GetArcs(), Is.Empty);
+                    .ToArray(),
+                Is.EquivalentTo(new string[] { "w", "y", "z" }.OrderBy(x => x)));
 
+            Assert.That(result[1].GetArcs(), Is.Empty);
         }
 
         [Test]
@@ -292,13 +290,12 @@ namespace TauCode.Algorithms.Graphs.Tests
             Assert.That(result, Has.Count.EqualTo(2));
 
             // 0
-            CollectionAssert.AreEquivalent(
-                new string[] { "a", "b", "c", "d", "e" }.OrderBy(x => x),
+            Assert.That(
                 result[0]
                     .Select(x => x.Name)
                     .OrderBy(x => x)
-                    .ToArray()
-                );
+                    .ToArray(),
+                Is.EquivalentTo(new string[] { "a", "b", "c", "d", "e" }.OrderBy(x => x)));
 
             var edges = result[0].GetArcs().ToList();
             Assert.That(edges, Has.Count.EqualTo(2));
@@ -310,13 +307,13 @@ namespace TauCode.Algorithms.Graphs.Tests
             Assert.That(edge.Head, Is.EqualTo(e));
 
             // 0
-            CollectionAssert.AreEquivalent(
-                new string[] { "w", "y", "z" }.OrderBy(x => x),
+            Assert.That(
                 result[1]
                     .Select(x => x.Name)
                     .OrderBy(x => x)
-                    .ToArray()
-                );
+                    .ToArray(),
+                Is.EquivalentTo(new string[] { "w", "y", "z" }.OrderBy(x => x)));
+
             Assert.That(result[1].GetArcs(), Is.Empty);
         }
     }
